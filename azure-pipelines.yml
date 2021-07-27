@@ -6,5 +6,5 @@ pool:
 
 steps:
 - script: |
-    az pipelines build tag add --build-id $(Build.BuildNumber) --tags FirstTag --detect true
+    az pipelines build tag add --build-id $(Build.BuildNumber) --tags FirstTag --detect true --organization https://dev.azure.com/telstradx/
   displayName: 'Run a multi-line script'
