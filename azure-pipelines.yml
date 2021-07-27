@@ -14,5 +14,5 @@ steps:
   displayName: 'Run a one-line script'
 
 - script: |
-    az pipelines build tag add ----build-id $(Build.BuildNumber) --tags FirstTag
+    az pipelines build tag add --build-id $(Build.BuildNumber) --tags FirstTag
   displayName: 'Run a multi-line script'
